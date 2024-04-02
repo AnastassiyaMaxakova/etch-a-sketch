@@ -14,10 +14,11 @@ body,html {
 }
 
 #container {
-    border: 2px solid rgb(82, 82, 82);
     height: 70vh;
     width:50%;
     background-color: white;
+    display: flex;
+    position: relative;
 }
 
 #clearBtn {
@@ -30,3 +31,10 @@ body,html {
 #clearBtn:hover {
     background-color: rgba(41, 41, 41, 0.671);
 }
+
+.square{
+    width: 16px;
+    height: 16px;    
+    border: none;
+    position: absolute;
+    }
