@@ -8,7 +8,6 @@ body,html {
     flex: 1;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     background-color:darkgrey;
     height: 100vh;
 }
@@ -39,3 +38,23 @@ body,html {
     border: none;
     position: absolute;
     }
+
+.slideContainer{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slider {
+    width:30%;
+
+}
+
+p{
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}

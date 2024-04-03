@@ -9,7 +9,11 @@
 <body>
     <div id='display'>
         <div id='container'></div>
-        <button onclick="clear()" id='clearBtn'>Clear</button>
+        <div class="slideContainer">
+            <p id="value">16 x 16</p>
+            <input type="range" min='1' max='100' value="16" id="slider" class="slider">
+        </div>
+        <button onclick="reset()" id='clearBtn'>Clear</button>
     </div>
     <script src="script.js"></script>
 </body>
