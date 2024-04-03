@@ -1,6 +1,13 @@
 const container = document.getElementById('container');
-container.addEventListener('mousemove',addSquare);
 
+const slider = document.getElementById('slider');
+const output = document.getElementById('value');
+
+slider.oninput = function (){
+    output.textContent = `${this.value} x ${this.value}`;
+}
+
+container.addEventListener('mouseover',addSquare);
 
 function addSquare(event){
     let div = document.getElementById('container'); 
@@ -12,11 +19,17 @@ function addSquare(event){
 
     let newDiv = document.createElement('div');
     newDiv.classList.add('square');
-    newDiv.style.cssText = `left:${x}px; top:${y}px; background-color:#${randomColor};`
+    newDiv.style.cssText = `left:${x}px;    
+                            top:${y}px; 
+                            background-color:#${randomColor};
+                            width:${slider.value}px;
+                            height:${slider.value}px;`
     container.appendChild(newDiv);   
 }
 
-function clear(){
-    
+function reset(){
+    container.innerHTML = '';
+    output.textContent = '16 x 16';
+    slider.value = '16';
 }
 
